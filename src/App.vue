@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>Click Speed Test ⏱️</header>
-    <main @click="counter += 1">
+    <main>
       <div class="start-button"><transition name="pop">
         <button
           class="bttn-fill bttn-md bttn-primary"
@@ -24,6 +24,9 @@
         </div>
       </div></transition>
     </main>
+    <div @click="countNewClick()" v-bind:class="(playing)?'':'hidden'" class="clickArea">
+
+    </div>
   </div>
 </template>
 
@@ -42,12 +45,19 @@ export default {
   },
   methods: {
     startClickContest: function() {
+      this.countDown = this.plage
       this.showBtn = false;
       this.btnClicked = true;
       this.counter = 0;
       this.placement = 5;
+      this.playing= true
 
       this.clickContest();
+    },
+    countNewClick: function() {
+      if (this.playing) {
+        this.counter += 1
+      }
     },
     clickContest: function() {
       setTimeout(() => {
@@ -55,6 +65,7 @@ export default {
         this.score = this.counter;
         this.placement = -1;
         this.btnClick = false;
+        this.playing= false
       }, this.plage * 1000);
     },
     countDownTimer() {
@@ -98,8 +109,21 @@ main {
   margin-top: 30vh;
   flex-direction: column;
   align-items: center;
-height: 100vh;
 user-select: none;
+height: 100%;
+}
+.clickArea {
+position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: transparent;
+    z-index: 10;
+}
+
+.hidden {
+  display: none;
 }
 
 .result-visual {
