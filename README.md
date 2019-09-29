@@ -1,9 +1,9 @@
-<h1 align="center">Welcome to ClickSpeedContest 👋</h1>
+<h1 align="center">Welcome to ClickSpeedTest 👋</h1>
 
 ⚠️ **Vieux projet VueJS** ⚠️
-> ClicK speed app (old project)  
+> Click speed app (old project)  
 
-### 🏠 [Homepage](ClickSpeedContest.noow.sh)
+### 🏠 [Homepage](ClickSpeedTest.now.sh)
 
 ## Install
 

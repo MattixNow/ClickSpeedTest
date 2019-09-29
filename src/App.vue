@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header>Click Speed Contest ⏱️</header>
+    <header>Click Speed Test ⏱️</header>
     <main @click="counter += 1">
       <div class="start-button"><transition name="pop">
         <button
