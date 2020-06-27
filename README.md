@@ -22,7 +22,7 @@ yarn serve
 👤 **Mattèo Gauthier**
 
 * Twitter: [@MattixNow](https://twitter.com/MattixNow)
-* Github: [@MattixNow](https://github.com/MattixNow)
+* Github: [@MatteoGauthier](https://github.com/MatteoGauthier)
 
 
 ## Show your support
